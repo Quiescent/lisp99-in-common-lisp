@@ -2,3 +2,695 @@
 
 I'm learning Common Lisp and the Lisp-99 problems seem like a good way
 to practice some of the basics.
+
+* Problems
+
+** [[./lisp/problem1.lisp][Problem 1]]: Find the last box of a list
+Example:
+
+#+BEGIN_SRC lisp :results raw
+  (load "lisp/problem1.lisp")
+  (my-last '(a b c d)); => (D)
+#+END_SRC
+
+#+RESULTS:
+(D)
+
+** [[./lisp/problem2.lisp][Problem 2]]: Find the last but one box of a list
+Example
+
+#+BEGIN_SRC lisp :results raw
+  (my-but-last '(a b c d)); => (C D)
+#+END_SRC
+
+** [[./lisp/problem3.lisp][Problem 3]]: Find the K'th element of a list
+The first element in the list is number 1.
+
+Example:
+
+#+BEGIN_SRC lisp :results raw
+  (element-at '(a b c d e) 3); => C
+#+END_SRC
+
+** [[./lisp/problem4.lisp][Problem 4]]: Find the number of elements of a list
+
+** [[./lisp/problem5.lisp][Problem 5]]: Reverse a list
+
+** [[./lisp/problem6.lisp][Problem 6]]: Find out whether a list is a palindrome
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem7.lisp][Problem 7]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem8.lisp][Problem 8]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem9.lisp][Problem 9]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem10.lisp][Problem 10]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem11.lisp][Problem 11]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem12.lisp][Problem 12]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem13.lisp][Problem 13]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem14.lisp][Problem 14]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem15.lisp][Problem 15]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem16.lisp][Problem 16]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem17.lisp][Problem 17]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem18.lisp][Problem 18]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem19.lisp][Problem 19]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem20.lisp][Problem 20]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem21.lisp][Problem 21]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem22.lisp][Problem 22]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem23.lisp][Problem 23]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem24.lisp][Problem 24]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem25.lisp][Problem 25]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem26.lisp][Problem 26]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem27.lisp][Problem 27]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem28.lisp][Problem 28]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem29.lisp][Problem 29]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem30.lisp][Problem 30]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem31.lisp][Problem 31]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem32.lisp][Problem 32]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem33.lisp][Problem 33]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem34.lisp][Problem 34]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem35.lisp][Problem 35]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem36.lisp][Problem 36]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem37.lisp][Problem 37]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem38.lisp][Problem 38]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem39.lisp][Problem 39]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem40.lisp][Problem 40]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem41.lisp][Problem 41]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem42.lisp][Problem 42]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem43.lisp][Problem 43]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem44.lisp][Problem 44]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem45.lisp][Problem 45]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem46.lisp][Problem 46]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem47.lisp][Problem 47]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem48.lisp][Problem 48]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem49.lisp][Problem 49]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem50.lisp][Problem 50]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem51.lisp][Problem 51]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem52.lisp][Problem 52]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem53.lisp][Problem 53]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem54.lisp][Problem 54]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem55.lisp][Problem 55]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem56.lisp][Problem 56]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem57.lisp][Problem 57]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem58.lisp][Problem 58]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem59.lisp][Problem 59]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem60.lisp][Problem 60]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem61.lisp][Problem 61]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem62.lisp][Problem 62]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem63.lisp][Problem 63]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem64.lisp][Problem 64]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem65.lisp][Problem 65]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem66.lisp][Problem 66]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem67.lisp][Problem 67]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem68.lisp][Problem 68]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem69.lisp][Problem 69]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem70.lisp][Problem 70]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem71.lisp][Problem 71]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem72.lisp][Problem 72]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem73.lisp][Problem 73]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem74.lisp][Problem 74]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem75.lisp][Problem 75]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem76.lisp][Problem 76]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem77.lisp][Problem 77]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem78.lisp][Problem 78]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem79.lisp][Problem 79]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem80.lisp][Problem 80]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem81.lisp][Problem 81]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem82.lisp][Problem 82]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem83.lisp][Problem 83]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem84.lisp][Problem 84]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem85.lisp][Problem 85]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem86.lisp][Problem 86]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem87.lisp][Problem 87]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem88.lisp][Problem 88]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem89.lisp][Problem 89]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem90.lisp][Problem 90]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem91.lisp][Problem 91]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem92.lisp][Problem 92]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem93.lisp][Problem 93]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem94.lisp][Problem 94]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem95.lisp][Problem 95]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem96.lisp][Problem 96]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem97.lisp][Problem 97]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem98.lisp][Problem 98]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
+** [[./lisp/problem99.lisp][Problem 99]]: {}
+Example
+
+#+BEGIN_SRC lisp :results raw
+
+#+END_SRC
+
