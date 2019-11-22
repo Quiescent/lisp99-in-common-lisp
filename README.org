@@ -106,12 +106,19 @@ Example:
 #+RESULTS:
 (A B C A D E)
 
-** [[./lisp/problem9.lisp][Problem 9]]: {}
-Example
+** [[./lisp/problem9.lisp][Problem 9]]: Pack consecutive duplicates of list elements into sublists
+If a list contains repeated elements they should be placed in separate
+sublists.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem9.lisp")
+  (pack '(a a a a b c c a a d e e e e)); => ((A A A A) (B) (C C) (A A) (D) (E E E E))
 #+END_SRC
+
+#+RESULTS:
+((A A A A) (B) (C C) (A A) (D))
 
 ** [[./lisp/problem10.lisp][Problem 10]]: {}
 Example
