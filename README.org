@@ -53,6 +53,16 @@ Example:
 
 ** [[./lisp/problem5.lisp][Problem 5]]: Reverse a list
 
+Example:
+#+BEGIN_SRC lisp :results raw
+  (load "lisp/problem5.lisp")
+  (my-reverse '(a b c d e)); => (E D C B A)
+  (my-reverse-2 '(a b c d e)); => (E D C B A)
+#+END_SRC
+
+#+RESULTS:
+(E D C B A)
+
 ** [[./lisp/problem6.lisp][Problem 6]]: Find out whether a list is a palindrome
 Example
 
