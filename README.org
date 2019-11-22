@@ -1,0 +1,4 @@
+* Introduction
+
+I'm learning Common Lisp and the Lisp-99 problems seem like a good way
+to practice some of the basics.
