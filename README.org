@@ -118,14 +118,25 @@ Example:
 #+END_SRC
 
 #+RESULTS:
-((A A A A) (B) (C C) (A A) (D))
+((A A A A) (B) (C C) (A A) (D) (E E E E))
 
-** [[./lisp/problem10.lisp][Problem 10]]: {}
-Example
+
+** [[./lisp/problem10.lisp][Problem 10]]: Run-length encoding of a list
+Use the result of problem P09 to implement the so-called run-length
+encoding data compression method. Consecutive duplicates of elements
+are encoded as lists (N E) where N is the number of duplicates of the
+element E.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem9.lisp")
+  (load "lisp/problem10.lisp")
+  (encode '(a a a a b c c a a d e e e e)); => ((4 A) (1 B) (2 C) (2 A) (1 D) (4 E))
 #+END_SRC
+
+#+RESULTS:
+((4 . A) (1 . B) (2 . C) (2 . A) (1 . D) (4 . E))
 
 ** [[./lisp/problem11.lisp][Problem 11]]: {}
 Example
