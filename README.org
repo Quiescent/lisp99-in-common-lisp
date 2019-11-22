@@ -75,12 +75,21 @@ Example:
 #+RESULTS:
 (NIL . T)
 
-** [[./lisp/problem7.lisp][Problem 7]]: {}
-Example
+** [[./lisp/problem7.lisp][Problem 7]]: Flatten a nested list structure
+Transform a list, possibly holding lists as elements into a `flat'
+list by replacing each list with its elements (recursively).
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem7.lisp")
+  (my-flatten '(a (b (c d) e))); => (A B C D E)
 #+END_SRC
+
+#+RESULTS:
+(A B C D E)
+
+Hint: Use the predefined functions list and append.
 
 ** [[./lisp/problem8.lisp][Problem 8]]: {}
 Example
