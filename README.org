@@ -91,12 +91,20 @@ Example:
 
 Hint: Use the predefined functions list and append.
 
-** [[./lisp/problem8.lisp][Problem 8]]: {}
-Example
+** [[./lisp/problem8.lisp][Problem 8]]: Eliminate consecutive duplicates of list elements
+If a list contains repeated elements they should be replaced with a
+single copy of the element.  The order of the elements should not be
+changed.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem8.lisp")
+  (compress '(a a a a b c c a a d e e e e)); => (A B C A D E)
 #+END_SRC
+
+#+RESULTS:
+(A B C A D E)
 
 ** [[./lisp/problem9.lisp][Problem 9]]: {}
 Example
