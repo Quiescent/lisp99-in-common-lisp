@@ -20,8 +20,12 @@ Example:
 Example
 
 #+BEGIN_SRC lisp :results raw
+  (load "lisp/problem2.lisp")
   (my-but-last '(a b c d)); => (C D)
 #+END_SRC
+
+#+RESULTS:
+(C D)
 
 ** [[./lisp/problem3.lisp][Problem 3]]: Find the K'th element of a list
 The first element in the list is number 1.
