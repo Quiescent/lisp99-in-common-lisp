@@ -33,8 +33,12 @@ The first element in the list is number 1.
 Example:
 
 #+BEGIN_SRC lisp :results raw
+  (load "lisp/problem3.lisp")
   (element-at '(a b c d e) 3); => C
 #+END_SRC
+
+#+RESULTS:
+C
 
 ** [[./lisp/problem4.lisp][Problem 4]]: Find the number of elements of a list
 
