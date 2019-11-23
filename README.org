@@ -250,12 +250,17 @@ Example:
 #+RESULTS:
 (D E F G H)
 
-** [[./lisp/problem19.lisp][Problem 19]]: {}
-Example
+** [[./lisp/problem19.lisp][Problem 19]]: Rotate a list N places to the left
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem19.lisp")
+  (rotate '(a b c d e f g h) 3); => (D E F G H A B C)
 #+END_SRC
+
+#+RESULTS:
+(D E F G H A B C)
 
 ** [[./lisp/problem20.lisp][Problem 20]]: {}
 Example
