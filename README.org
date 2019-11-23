@@ -262,12 +262,16 @@ Example:
 #+RESULTS:
 (D E F G H A B C)
 
-** [[./lisp/problem20.lisp][Problem 20]]: {}
-Example
+** [[./lisp/problem20.lisp][Problem 20]]: Remove the K'th element from a list
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem20.lisp")
+  (remove-at '(a b c d) 2); => (A C D)
 #+END_SRC
+
+#+RESULTS:
+(A C D)
 
 ** [[./lisp/problem21.lisp][Problem 21]]: {}
 Example
