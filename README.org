@@ -186,12 +186,17 @@ Example:
 #+RESULTS:
 ((4 . A) B (2 . C) (2 . A) D (4 . E))
 
-** [[./lisp/problem14.lisp][Problem 14]]: {}
-Example
+** [[./lisp/problem14.lisp][Problem 14]]: Duplicate the elements of a list
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem14.lisp")
+  (dupli '(a b c c d)); => (A A B B C C C C D D)
 #+END_SRC
+
+#+RESULTS:
+(A A B B C C C C D D)
 
 ** [[./lisp/problem15.lisp][Problem 15]]: {}
 Example
