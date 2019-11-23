@@ -222,12 +222,19 @@ Example:
 #+RESULTS:
 (A B D E G H K)
 
-** [[./lisp/problem17.lisp][Problem 17]]: {}
-Example
+** [[./lisp/problem17.lisp][Problem 17]]: Split a list into two parts; the length of the first part is given
+Do not use any predefined predicates.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem17.lisp")
+  (split '(a b c d e f g h i k) 3); => ((A B C) (D E F G H I K))
 #+END_SRC
+
+#+RESULTS:
+((A B C) ((D E F G H I K)))
+
 
 ** [[./lisp/problem18.lisp][Problem 18]]: {}
 Example
