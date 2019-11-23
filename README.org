@@ -235,13 +235,20 @@ Example:
 #+RESULTS:
 ((A B C) ((D E F G H I K)))
 
+** [[./lisp/problem18.lisp][Problem 18]]: Extract a slice from a list
+Given two indices, I and K, the slice is the list containing the
+elements between the I'th and K'th element of the original list (both
+limits included).  Start counting the elements with 1.
 
-** [[./lisp/problem18.lisp][Problem 18]]: {}
-Example
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem18.lisp")
+  (slice '(a b c d e f g h i k) 3 7); => (C D E F G)
 #+END_SRC
+
+#+RESULTS:
+(D E F G H)
 
 ** [[./lisp/problem19.lisp][Problem 19]]: {}
 Example
