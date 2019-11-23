@@ -210,12 +210,17 @@ Example:
 #+RESULTS:
 (A A A B B B C C C)
 
-** [[./lisp/problem16.lisp][Problem 16]]: {}
-Example
+** [[./lisp/problem16.lisp][Problem 16]]: Drop every N'th element from a list
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem16.lisp")
+  (drop '(a b c d e f g h i k) 3); => (A B D E G H K)
 #+END_SRC
+
+#+RESULTS:
+(A B D E G H K)
 
 ** [[./lisp/problem17.lisp][Problem 17]]: {}
 Example
