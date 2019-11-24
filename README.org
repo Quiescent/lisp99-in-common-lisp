@@ -356,12 +356,19 @@ Example:
  (A E F) (B C D) (B C E) (B C F) (B D E) (B D F) (B E F) (C D E) (C D F)
  (C E F) (D E F))
 
-** [[./lisp/problem27.lisp][Problem 27]]: {}
+** [[./lisp/problem27.lisp][Problem 27]]: Group the elements of a set into disjoint subsets
+a) In how many ways can a group of 9 people work in 3 disjoint
+   subgroups of 2, 3 and 4 persons? Write a function that generates
+   all the possibilities and returns them in a list.
+
 Example
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem27.lisp")
+  (group3 '(aldo beat carla david evi flip gary hugo ida)); => ( ( (ALDO BEAT) (CARLA DAVID EVI) (FLIP GARY HUGO IDA) ) ... )
 #+END_SRC
+
+#+RESULTS:
 
 ** [[./lisp/problem28.lisp][Problem 28]]: {}
 Example
