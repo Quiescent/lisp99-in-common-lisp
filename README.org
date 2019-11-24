@@ -273,12 +273,17 @@ Example:
 #+RESULTS:
 (A C D)
 
-** [[./lisp/problem21.lisp][Problem 21]]: {}
-Example
+** [[./lisp/problem21.lisp][Problem 21]]: Insert an element at a given position into a list
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem21.lisp")
+  (insert-at 'alfa '(a b c d) 2); => (A ALFA B C D)
 #+END_SRC
+
+#+RESULTS:
+(A ALFA B C D)
 
 ** [[./lisp/problem22.lisp][Problem 22]]: {}
 Example
