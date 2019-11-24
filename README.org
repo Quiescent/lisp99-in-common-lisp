@@ -285,21 +285,34 @@ Example:
 #+RESULTS:
 (A ALFA B C D)
 
-** [[./lisp/problem22.lisp][Problem 22]]: {}
-Example
+** [[./lisp/problem22.lisp][Problem 22]]: Create a list containing all integers within a given range
+If first argument is smaller than second, produce a list in decreasing
+order.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem22.lisp")
+  (range 4 9); => (4 5 6 7 8 9)
 #+END_SRC
 
-** [[./lisp/problem23.lisp][Problem 23]]: {}
-Example
+#+RESULTS:
+(4 5 6 7 8 9)
+
+** [[./lisp/problem23.lisp][Problem 23]]: Extract a given number of randomly selected elements from a list
+The selected items shall be returned in a list.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem23.lisp")
+  (rnd-select '(a b c d e f g h) 3); => (E D A)
 #+END_SRC
 
-** [[./lisp/problem24.lisp][Problem 24]]: {}
+#+RESULTS:
+(E B G)
+
+** [[./lisp/problem24.lisp][Problem 24]]: 
 Example
 
 #+BEGIN_SRC lisp :results raw
