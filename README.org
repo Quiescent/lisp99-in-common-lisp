@@ -361,7 +361,7 @@ a) In how many ways can a group of 9 people work in 3 disjoint
    subgroups of 2, 3 and 4 persons? Write a function that generates
    all the possibilities and returns them in a list.
 
-Example
+Example:
 
 #+BEGIN_SRC lisp :results raw
   (load "lisp/problem27.lisp")
@@ -370,19 +370,38 @@ Example
 
 #+RESULTS:
 
-** [[./lisp/problem28.lisp][Problem 28]]: {}
-Example
+** [[./lisp/problem28.lisp][Problem 28]]: Sorting a list of lists according to length of sublists
+a) We suppose that a list contains elements that are lists
+   themselves.  The objective is to sort the elements of this list
+   according to their length.  e.g. short lists first, longer lists
+   later, or vice versa.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem28.lisp")
+  (lsort '((a b c) (d e) (f g h) (d e) (i j k l) (m n) (o))); => ((O) (D E) (D E) (M N) (A B C) (F G H) (I J K L))
 #+END_SRC
 
-** [[./lisp/problem29.lisp][Problem 29]]: {}
-Example
+#+RESULTS:
+((O) (D E) (D E) (M N) (A B C) (F G H) (I J K L))
+
+** [[./lisp/problem29.lisp][Problem 29]]: Sorting a list of lists according to length of sublists
+b) Again, we suppose that a list contains elements that are lists
+   themselves.  But this time the objective is to sort the elements of
+   this list according to their length frequency; i.e., in the
+   default, where sorting is done ascendingly, lists with rare lengths
+   are placed first, others with a more frequent length come later.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem29.lisp")
+  (lfsort '((a b c) (d e) (f g h) (d e) (i j k l) (m n) (o))); => ((i j k l) (o) (a b c) (f g h) (d e) (d e) (m n))
 #+END_SRC
+
+#+RESULTS:
+((I J K L) (O) (A B C) (F G H) (D E) (D E) (M N))
 
 ** [[./lisp/problem30.lisp][Problem 30]]: {}
 Example
