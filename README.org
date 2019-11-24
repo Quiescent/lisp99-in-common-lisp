@@ -403,12 +403,12 @@ Example:
 #+RESULTS:
 ((I J K L) (O) (A B C) (F G H) (D E) (D E) (M N))
 
-** [[./lisp/problem30.lisp][Problem 30]]: {}
-Example
+Note that in the above example, the first two lists in the result have
+length 4 and 1, both lengths appear just once. The third and forth
+list have length 3 which appears twice (there are two list of this
+length).  And finally, the last three lists have length 2.  This is
+the most frequent length.
 
-#+BEGIN_SRC lisp :results raw
-
-#+END_SRC
 
 ** [[./lisp/problem31.lisp][Problem 31]]: {}
 Example
