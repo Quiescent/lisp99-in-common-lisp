@@ -337,12 +337,24 @@ Example:
 #+RESULTS:
 (F B C E A D)
 
-** [[./lisp/problem26.lisp][Problem 26]]: {}
-Example
+** [[./lisp/problem26.lisp][Problem 26]]: Generate the combinations of K distinct objects chosen from the N elements of a list
+In how many ways can a committee of 3 be chosen from a group of 12
+people? We all know that there are C(12,3) = 220 possibilities (C
+(N,K) denotes the well-known binomial coefficients).  For pure
+mathematicians, this result may be great.  But we want to really
+generate all the possibilities in a list.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem26.lisp")
+  (combination 3 '(a b c d e f)); => ((A B C) (A B D) (A B E) ... ) 
 #+END_SRC
+
+#+RESULTS:
+((A B C) (A B D) (A B E) (A B F) (A C D) (A C E) (A C F) (A D E) (A D F)
+ (A E F) (B C D) (B C E) (B C F) (B D E) (B D F) (B E F) (C D E) (C D F)
+ (C E F) (D E F))
 
 ** [[./lisp/problem27.lisp][Problem 27]]: {}
 Example
