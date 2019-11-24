@@ -312,19 +312,30 @@ Example:
 #+RESULTS:
 (E B G)
 
-** [[./lisp/problem24.lisp][Problem 24]]: 
-Example
+** [[./lisp/problem24.lisp][Problem 24]]: Lotto: Draw N different random numbers from the set 1..M
+The selected numbers shall be returned in a list.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem24.lisp")
+  (lotto-select 6 49); => (23 1 17 33 21 37)
 #+END_SRC
 
-** [[./lisp/problem25.lisp][Problem 25]]: {}
-Example
+#+RESULTS:
+(43 35 37 4 26 31)
+
+** [[./lisp/problem25.lisp][Problem 25]]: Generate a random permutation of the elements of a list
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem25.lisp")
+  (rnd-permu '(a b c d e f)); => (B A D C E F)
 #+END_SRC
+
+#+RESULTS:
+(F B C E A D)
 
 ** [[./lisp/problem26.lisp][Problem 26]]: {}
 Example
