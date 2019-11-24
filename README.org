@@ -409,6 +409,7 @@ list have length 3 which appears twice (there are two list of this
 length).  And finally, the last three lists have length 2.  This is
 the most frequent length.
 
+** [[./lisp/problem30.lisp][Problem 30]]: Doesn't seem to exist??
 
 ** [[./lisp/problem31.lisp][Problem 31]]: {}
 Example
