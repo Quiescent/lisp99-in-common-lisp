@@ -411,21 +411,22 @@ the most frequent length.
 
 ** [[./lisp/problem30.lisp][Problem 30]]: Doesn't seem to exist??
 
-** [[./lisp/problem32.lisp][Problem 31]]: {}
+** [[./lisp/problem31.lisp][Problem 31]]: Determine whether a given integer number is prime
+Example:
+
+#+BEGIN_SRC lisp :results raw
+  (load "lisp/problem31.lisp")
+  (is-prime 7); => T
+#+END_SRC
+
+** [[./lisp/problem32.lisp][Problem 32]]: {}
 Example
 
 #+BEGIN_SRC lisp :results raw
 
 #+END_SRC
 
-** [[./lisp/problem33.lisp][Problem 32]]: {}
-Example
-
-#+BEGIN_SRC lisp :results raw
-
-#+END_SRC
-
-** [[./lisp/problem31.lisp][Problem 33]]: Determine whether two positive integer numbers are coprime
+** [[./lisp/problem33.lisp][Problem 33]]: Determine whether two positive integer numbers are coprime
 Two numbers are coprime if their greatest common divisor equals 1.
 
 Example:
