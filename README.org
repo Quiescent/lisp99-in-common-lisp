@@ -475,12 +475,19 @@ Example:
 #+RESULTS:
 (3 3 5 7)
 
-** [[./lisp/problem36.lisp][Problem 36]]: {}
-Example
+** [[./lisp/problem36.lisp][Problem 36]]: Determine the prime factors of a given positive integer (2)
+Construct a list containing the prime factors and their multiplicity.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem36.lisp")
+  (load "lisp/problem35.lisp")
+  (prime-factors-mult 315); => ((3 2) (5 1) (7 1))
 #+END_SRC
+
+#+RESULTS:
+((3 2) (5 1) (7 1))
 
 ** [[./lisp/problem37.lisp][Problem 37]]: {}
 Example
