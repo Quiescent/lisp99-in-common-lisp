@@ -462,12 +462,18 @@ phi(1) = 1.
 #+RESULTS:
 4
 
-** [[./lisp/problem35.lisp][Problem 35]]: {}
-Example
+** [[./lisp/problem35.lisp][Problem 35]]: Determine the prime factors of a given positive integer
+Construct a flat list containing the prime factors in ascending order.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem35.lisp")
+  (prime-factors 315); => (3 3 5 7)
 #+END_SRC
+
+#+RESULTS:
+(3 3 5 7)
 
 ** [[./lisp/problem36.lisp][Problem 36]]: {}
 Example
