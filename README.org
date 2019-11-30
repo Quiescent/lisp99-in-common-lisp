@@ -526,12 +526,21 @@ efficiency.  Try to calculate phi(10090) as an example.
 ((STANDARD . 23) (IMPROVED . 3))
 
 
-** [[./lisp/problem39.lisp][Problem 39]]: {}
-Example
+** [[./lisp/problem39.lisp][Problem 39]]: A list of prime numbers
+Given a range of integers by its lower and upper limit, construct a
+list of all prime numbers in that range.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem35.lisp")
+  (load "lisp/problem39.lisp")
+  (primes-from 100 200)
 #+END_SRC
+
+#+RESULTS:
+#(101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193
+  197 199)
 
 ** [[./lisp/problem40.lisp][Problem 40]]: {}
 Example
