@@ -618,12 +618,32 @@ Example:
   (truth-table '(A B and (A or (A nand (A B)))))
 #+END_SRC
 
-** [[./lisp/problem47.lisp][Problem 47]]: {}
+#+RESULTS:
+"
+FALSE FALSE FALSE
+FALSE TRUE FALSE
+TRUE FALSE TRUE
+TRUE TRUE TRUE"
+
+** [[./lisp/problem47.lisp][Problem 47]]: Truth tables for logical expressions (2)
+Continue problem P46 by defining and/2, or/2, etc as being
+operators.  This allows to write the logical expression in the more
+natural way, as in the example: A and (A or not B).  Define operator
+precedence as usual; i.e. as in Java.
+
 Example
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem47.lisp")
+  (truth-table-operators:truth-table '(A B (A and (A or (A nand B)))))
 #+END_SRC
+
+#+RESULTS:
+"
+FALSE FALSE FALSE
+FALSE TRUE FALSE
+TRUE FALSE TRUE
+TRUE TRUE TRUE"
 
 ** [[./lisp/problem48.lisp][Problem 48]]: {}
 Example
