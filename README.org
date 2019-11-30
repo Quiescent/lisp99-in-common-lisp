@@ -645,12 +645,29 @@ FALSE TRUE FALSE
 TRUE FALSE TRUE
 TRUE TRUE TRUE"
 
-** [[./lisp/problem48.lisp][Problem 48]]: {}
+** [[./lisp/problem48.lisp][Problem 48]]: Truth tables for logical expressions (3)
+Generalize problem P47 in such a way that the logical expression may
+contain any number of logical variables.  Define table/2 in a way that
+table(List,Expr) prints the truth table for the expression Expr, which
+contains the logical variables enumerated in List.
+
 Example
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem48.lisp")
+  (generalised-truth-table-operators:truth-table '(A B C (C OR A and (A or (A nand B)))))
 #+END_SRC
+
+#+RESULTS:
+"FALSE FALSE FALSE  FALSE
+TRUE FALSE FALSE  TRUE
+FALSE TRUE FALSE  FALSE
+TRUE TRUE FALSE  TRUE
+FALSE FALSE TRUE  TRUE
+TRUE FALSE TRUE  TRUE
+FALSE TRUE TRUE  TRUE
+TRUE TRUE TRUE  TRUE
+"
 
 ** [[./lisp/problem49.lisp][Problem 49]]: {}
 Example
