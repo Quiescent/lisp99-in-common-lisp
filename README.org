@@ -598,39 +598,24 @@ numbers, one of them is very small.  Very rarely, the primes are both
 bigger than say 50.  Try to find out how many such cases there are in
 the range 2..3000.
 
-** [[./lisp/problem42.lisp][Problem 42]]: {}
-Example
+** [[./lisp/problem46.lisp][Problem 46]]: Truth tables for logical expressions
+Define predicates and/2, or/2, nand/2, nor/2, xor/2, impl/2 and equ/2
+(for logical equivalence) which succeed or fail according to the
+result of their respective operations; e.g. and(A,B) will succeed, if
+and only if both A and B succeed.  Note that A and B can be Prolog
+goals (not only the constants true and fail).
+
+A logical expression in two variables can then be written in prefix
+notation, as in the following example: and(or(A,B),nand (A,B)).
+
+Now, write a predicate table/3 which prints the truth table of a given
+logical expression in two variables.
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
-#+END_SRC
-
-** [[./lisp/problem43.lisp][Problem 43]]: {}
-Example
-
-#+BEGIN_SRC lisp :results raw
-
-#+END_SRC
-
-** [[./lisp/problem44.lisp][Problem 44]]: {}
-Example
-
-#+BEGIN_SRC lisp :results raw
-
-#+END_SRC
-
-** [[./lisp/problem45.lisp][Problem 45]]: {}
-Example
-
-#+BEGIN_SRC lisp :results raw
-
-#+END_SRC
-
-** [[./lisp/problem46.lisp][Problem 46]]: {}
-Example
-
-#+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem46.lisp")
+  (truth-table '(A B and (A or (A nand (A B)))))
 #+END_SRC
 
 ** [[./lisp/problem47.lisp][Problem 47]]: {}
