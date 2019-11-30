@@ -489,19 +489,42 @@ Example:
 #+RESULTS:
 ((3 2) (5 1) (7 1))
 
-** [[./lisp/problem37.lisp][Problem 37]]: {}
-Example
+** [[./lisp/problem37.lisp][Problem 37]]: Calculate Euler's totient function phi(m) (improved)
+See problem P34 for the definition of Euler's totient function.  If
+the list of the prime factors of a number m is known in the form of
+problem P36 then the function phi(m) can be efficiently calculated as
+follows: Let ((p1 m1) (p2 m2) (p3 m3) ...) be the list of prime
+factors (and their multiplicities) of a given number m.  Then phi(m)
+can be calculated with the following formula:
+
+phi(m) = (p1 - 1) * p1 ** (m1 - 1) + (p2 - 1) * p2 ** (m2 - 1) + (p3 - 1) * p3 ** (m3 - 1) + ...
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem33.lisp")
+  (load "lisp/problem35.lisp")
+  (load "lisp/problem36.lisp")
+  (load "lisp/problem37.lisp")
+  (totient-phi-improved 10); => 4
 #+END_SRC
 
-** [[./lisp/problem38.lisp][Problem 38]]: {}
-Example
+#+RESULTS:
+4
+
+** [[./lisp/problem38.lisp][Problem 38]]: Compare the two methods of calculating Euler's totient function
+Use the solutions of problems P34 and P37 to compare the
+algorithms.  Take the number of logical inferences as a measure for
+efficiency.  Try to calculate phi(10090) as an example.
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem34.lisp")
+  (load "lisp/problem37.lisp")
+  (load "lisp/problem38.lisp")
+  (compare-phis 100900000)
 #+END_SRC
+
+#+RESULTS:
+((STANDARD . 23) (IMPROVED . 3))
+
 
 ** [[./lisp/problem39.lisp][Problem 39]]: {}
 Example

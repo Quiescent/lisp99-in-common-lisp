@@ -1,0 +1,10 @@
+(defun totient-phi-improved (n)
+  (let ((xs (prime-factors-mult n)))
+    (labels ((iter (ys)
+               (if (null ys)
+                   1
+                   (let ((p (caar  ys))
+                         (m (cadar ys)))
+                     (* (* (1- p) (expt p (1- m)))
+                        (iter (cdr ys)))))))
+      (iter xs))))
