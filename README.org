@@ -669,12 +669,27 @@ FALSE TRUE TRUE  TRUE
 TRUE TRUE TRUE  TRUE
 "
 
-** [[./lisp/problem49.lisp][Problem 49]]: {}
-Example
+** [[./lisp/problem49.lisp][Problem 49]]: Gray code
+An n-bit Gray code is a sequence of n-bit strings constructed
+according to certain rules. For example:
+n = 1: C(1) = ['0','1'].
+n = 2: C(2) = ['00','01','11','10'].
+n = 3: C(3) = ['000','001','011','010','110','111','101','100'].
+
+% gray(N, C) :- C is the N-bit Gray code
+
+Can you apply the method of "result caching" in order to make the
+predicate more efficient, when it is to be used repeatedly?
+
+Example:
 
 #+BEGIN_SRC lisp :results raw
-
+  (load "lisp/problem49.lisp")
+  (gray-code 3); => 0 1 3 2 6 7 5 4
 #+END_SRC
+
+#+RESULTS:
+(0 1 3 2 6 7 5 4)
 
 ** [[./lisp/problem50.lisp][Problem 50]]: {}
 Example
